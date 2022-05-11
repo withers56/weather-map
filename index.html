@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="images/elixir-favicon.ico">
+    <meta charset="UTF-8">
+    <title>Weather Map</title>
+
+
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+<!--    <link rel="stylesheet" href="css/bootstrap.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="js/keys.js"></script>
+    <link id="css" rel="stylesheet" href="css/weather-map.css">
+</head>
+<body>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-12 col-lg-6 test weather-box mt-3 order-1 order-lg-0 "></div>
+
+        <div class="col-12 col-lg-6 current-day-box p-0 order-0 order-lg-1">
+
+
+
+        </div>
+        <div id="map" class="order-3"></div>
+    </div>
+</div>
+
+
+
+<div id="menu">
+    <input id="satellite-v9" type="radio" name="rtoggle" value="satellite" >
+    <!-- See a list of Mapbox-hosted public styles at -->
+    <!-- https://docs.mapbox.com/api/maps/styles/#mapbox-styles -->
+    <label for="satellite-v9">satellite</label>
+    <input id="dark-v10" type="radio" name="rtoggle" value="dark" checked="checked">
+    <label for="dark-v10">dark</label>
+    <input id="streets-v11" type="radio" name="rtoggle" value="streets">
+    <label for="streets-v11">streets</label>
+    <input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors">
+    <label for="outdoors-v11">outdoors</label>
+</div>
+
+<script src="js/mapbox-geocoder-utils.js"></script>
+<!--<script src="js/jquery-2.2.4.js"></script>-->
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="js/weather-map-mapbox-api.js"></script>
+<script src="js/weather_map_jQuery.js"></script>
+</body>
+</html>

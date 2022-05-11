@@ -1,0 +1,101 @@
+body{
+    background-color: #121212;
+}
+#map {
+    /* the width and height may be set to any size */
+    width: 95%;
+    height: 495px;
+    margin: auto;
+
+    border-radius: 5px;
+}
+.test {
+    height: 700px;
+}
+.weekly-containers {
+    max-height: 100px;
+    background-color: #404040;
+    color: #ffffff;
+    border-radius: 5px;
+    border-bottom: 1px solid white;
+}
+.card {
+    background-color: #121212;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.card-header {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgba(179, 179, 179, 0.5);
+    border-radius: 0 0 5px 5px;
+    font-size: 14px;
+}
+.card-body {
+    background-color: #404040;
+    padding: 4px 8px;
+}
+.btn {
+    width: 100%;
+    padding: 0;
+    background-color: #181818;
+    color: #ffffff;
+}
+.bigger-text{
+    font-size: 42px;
+}
+.smaller-text {
+    font-size: 12px;
+}
+.bi {
+    font-size: 2.5em;
+    color: #ffffff;
+}
+img {
+    width: 75px;
+    height: 75px;
+}
+a:hover {
+    opacity: .3;
+}
+.line-container {
+    width: 30%;
+    height: 10px;
+    border: black 1px solid;
+    background-image: linear-gradient(to right, lightskyblue , orange);
+    border-radius: 10px;
+    overflow: visible;
+
+}
+.point {
+    background-color: #ffffff;
+    height: 15px;
+    width: 8px;
+    top: -3px;
+    position: relative;
+
+}
+#menu {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    background: #efefef;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+label {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width:992px) {
+    #map {
+        /* the width and height may be set to any size */
+        width: calc(49% + 3px);
+        height: 495px;
+        position: absolute;
+        top: 220px;
+        right: 10px;
+        border-radius: 5px;
+    }
+}
